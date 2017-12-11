@@ -1,0 +1,26 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">androidfirebase</string>
+    <string name="need_a_new_account">Need a new account?</string>
+    <string name="this_is_main_page">this is main page</string>
+    <string name="this_is_start_page">this is Start page</string>
+    <string name="your_nick">your nick</string>
+    <string name="create_account">Create account</string>
+    <string name="log_out">log out</string>
+    <string name="create_new_account">create new account</string>
+    <string name="already_have_ac_count">Already have Account</string>
+
+    <string name="log_in">Log in</string>
+    <string name="email">Email</string>
+    <string name="this_is_a_main_page">this is a main page</string>
+    <string name="welcome_to_irakli_s_app">Welcome to irakli\'s app</string>
+    <string name="password">password</string>
+    <item name="visible" type="id" />
+    <item name="masked" type="id" />
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="change_status">Change status</string>
+    <string name="change_image">Change image</string>
+    <string name="display_name">Display Name</string>
+    <string name="default_status">hey i'm user of speedChat</string>
+</resources>
