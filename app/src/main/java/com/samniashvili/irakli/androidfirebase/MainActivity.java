@@ -1,13 +1,13 @@
 package com.samniashvili.irakli.androidfirebase;
+
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.TableLayout;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -68,13 +68,22 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         super.onOptionsItemSelected(item);
-      if(item.getItemId() == R.id.main_logout){
-          FirebaseAuth.getInstance().signOut();
-          sendToStart();
-      }
-      if(item.getItemId() == R.id.main_settings_btn) {
-          Intent settingsIntent = new Intent(MainActivity.this,SettingsActivity.class);
-          startActivity(settingsIntent);
+
+
+        switch (item.getItemId()) {
+            case R.id.main_logout:
+                FirebaseAuth.getInstance().signOut();
+                sendToStart();
+                break;
+            case R.id.main_settings_btn:
+                Intent settingsIntent = new Intent(MainActivity.this, SettingsActivity.class);
+                startActivity(settingsIntent);
+                break;
+            case R.id.main_users:
+                Intent usersIntent = new Intent(MainActivity.this, UsersActivity.class);
+                startActivity(usersIntent);
+                break;
+
 
       }
       return true;

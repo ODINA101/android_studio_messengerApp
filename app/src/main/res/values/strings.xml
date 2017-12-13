@@ -1,4 +1,4 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <string name="app_name">androidfirebase</string>
     <string name="need_a_new_account">Need a new account?</string>
     <string name="this_is_main_page">this is main page</string>
@@ -23,4 +23,6 @@
     <string name="change_image">Change image</string>
     <string name="display_name">Display Name</string>
     <string name="default_status">hey i'm user of speedChat</string>
+    <string name="save_new_status">Save new status</string>
+    <string name="new_status">New status</string>
 </resources>
